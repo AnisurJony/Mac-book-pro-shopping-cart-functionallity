@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Shopping Card</title>
+
+            <!----------------Tailwind CDN Link section------------>
+
+            <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+            <main class="my-8">
+                        <section class="mt-10">
+
+                                    <!--------------- FUll page Container of the page----------------- -->
+
+                                    <div class="grid grid-cols-2 gap-5">
+
+
+                                                <!--------------- Left side of the page----------------- -->
+
+
+                                                <div class="container mx-auto h-3/4 w-3/4">
+
+
+
+                                                            <img class="img-fluid" src="images/mac.png">
+                                                </div>
+
+                                                <!--------------- Right side of the page----------------- -->
+
+                                                <div class="w-3/4">
+
+
+                                                            <!------------------------------Right side header section--------------------- -->
+                                                            <h1 class=" font-semi-bold text-5xl">
+                                                                        Customize your Blue
+                                                                        24-inch
+                                                                        iMac
+                                                                        with
+                                                                        Apple M1
+                                                                        chip
+                                                            </h1>
+
+                                                            <p class="mt-5">
+                                                                        Apple M1 chip with 8-core CPU with 4
+                                                                        performance and 4
+                                                                        efficiency
+                                                                        core, 7-core GPU and 16-core neural Engine 8GB
+                                                                        unified
+                                                                        memory 256GB SSD storage Two Thunderbolt/USB 4
+                                                                        ports Magic
+                                                                        Mouse Magic Keyboard US English
+                                                            </p>
+
+
+                                                            <!------------------------------ Ram Extended Button section----------------------->
+
+
+                                                            <div class="mt-8">
+
+                                                                        <h2 class="my-2">Memory</h2>
+
+                                                                        <button id="extra-ram-btn-one"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">8GB
+                                                                                    unified
+                                                                                    memory</button>
+                                                                        <button id="extra-ram-btn-two"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">16GB
+                                                                                    unified
+                                                                                    memory</button>
+                                                            </div>
+
+                                                            <!------------------------------Storage Extended Button section--------------------------->
+                                                            <div class="my-6">
+                                                                        <h2 class="my-2">Storage</h2>
+
+                                                                        <button id="extra-ssd-btn-one"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">256GB
+                                                                                    SSD storage</button>
+                                                                        <button id="extra-ssd-btn-two"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">512GB
+                                                                                    SSD storage</button>
+                                                                        <button id="extra-ssd-btn-three"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">1TB
+                                                                                    SSD storage</button>
+
+                                                            </div>
+
+                                                            <!------------------------------Add Delivery Charge Button section--------------------------->
+
+                                                            <div class="mt-8">
+
+                                                                        <h2 class="my-2">Choose your delivery option
+                                                                        </h2>
+
+                                                                        <button id="no-delivery-cost"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">
+                                                                                    Friday,
+                                                                                    Aug 25 FREE Prime Delivery
+                                                                        </button>
+
+                                                                        <button id="delivery-cost"
+                                                                                    class="border-2 border-transparent bg-gray-400 rounded px-2 py-1 hover:bg-red-500">
+                                                                                    Friday,
+                                                                                    Aug 25 Delivery Charge $20
+                                                                        </button>
+                                                            </div>
+
+                                                            <!------------------------------ Component Extended price with total claculation section--------------------------->
+
+                                                            <div class="mt-16 w-1/2">
+
+                                                                        <div class="mt-8">
+                                                                                    <!----------------Bese Price section------------>
+                                                                                    <div class="border-b-2 w-3/4">
+                                                                                                <div
+                                                                                                            class="container flex justify-between">
+                                                                                                            <div>
+                                                                                                                        Best
+                                                                                                                        Price
+
+                                                                                                            </div>
+
+                                                                                                            <div>
+                                                                                                                        $<span
+                                                                                                                                    id="">1299</span>
+                                                                                                            </div>
+                                                                                                </div>
+
+                                                                                    </div>
+
+                                                                                    <!----------------Extra Memory Price section------------>
+
+                                                                                    <div class="border-b-2 w-3/4 mt-1">
+                                                                                                <div
+                                                                                                            class="container flex justify-between">
+                                                                                                            <div>
+                                                                                                                        Extra
+                                                                                                                        Memory
+                                                                                                                        Cost
+                                                                                                            </div>
+                                                                                                            <div>
+                                                                                                                        $<span
+                                                                                                                                    id="memory-price">0</span>
+                                                                                                            </div>
+                                                                                                </div>
+
+                                                                                    </div>
+
+                                                                                    <!----------------Extra SSD storage Price section------------>
+
+                                                                                    <div class="border-b-2 w-3/4 mt-1">
+
+                                                                                                <div
+                                                                                                            class="container flex justify-between">
+                                                                                                            <div>
+                                                                                                                        Extra
+                                                                                                                        Storage
+                                                                                                                        Cost
+                                                                                                            </div>
+                                                                                                            <div>
+                                                                                                                        $<span
+                                                                                                                                    id="storage-price">0</span>
+                                                                                                            </div>
+                                                                                                </div>
+
+
+
+                                                                                    </div>
+
+                                                                                    <!----------------Delivery Charge section------------>
+
+                                                                                    <div
+                                                                                                class="border-b-4 border-black w-3/4 mt-1">
+
+                                                                                                <div
+                                                                                                            class="container flex justify-between">
+                                                                                                            <div>
+                                                                                                                        Delivery
+                                                                                                                        Charge
+                                                                                                            </div>
+                                                                                                            <div>
+                                                                                                                        $<span
+                                                                                                                                    id="delivery-charge">0</span>
+                                                                                                            </div>
+                                                                                                </div>
+
+
+
+                                                                                    </div>
+
+                                                                                    <!----------------Total Price section------------>
+
+                                                                                    <div class="border-b-2 w-3/4 mt-1">
+
+                                                                                                <div
+                                                                                                            class="container flex justify-between">
+                                                                                                            <div>
+                                                                                                                        Total
+                                                                                                                        Price
+                                                                                                            </div>
+                                                                                                            <div>
+                                                                                                                        $<span
+                                                                                                                                    id="total-cost">1299</span>
+                                                                                                            </div>
+                                                                                                </div>
+
+
+
+                                                                                    </div>
+
+
+                                                                                    <!--------------------Cupon Apply Field And Button section------------------>
+
+                                                                                    <div class="mt-8 ">
+
+                                                                                                <h3>Add Promo Code</h3>
+
+                                                                                                <input class="mt-2 border-2 rounded py-2"
+                                                                                                            type="text"
+                                                                                                            name=""
+                                                                                                            id="promo-code">
+
+
+                                                                                                <button id="apply-cupon"
+                                                                                                            class="bg-red-500 rounded px-3 py-2 border-2 border-red-500 font-bold text-white">
+                                                                                                            Apply
+                                                                                                </button>
+
+                                                                                                <br>
+
+                                                                                                <!------------ Warning For stop Cupon iteration section------------>
+
+                                                                                                <span id="warning-massg"
+                                                                                                            class="text-red-500"
+                                                                                                            style="display: none;">
+                                                                                                            You already
+                                                                                                            appy the
+                                                                                                            cupon!!
+                                                                                                </span>
+                                                                                    </div>
+
+                                                                        </div>
+
+                                                            </div>
+
+                                                </div>
+
+
+
+                                    </div>
+                                    <!------------------------------ Total Cost After Cupon Or Without Cupon section--------------------------->
+                                    <div class="my-8 border-t-2 w-3/4 flex justify-center container mx-auto">
+                                                <hr>
+                                                <div class="container flex justify-center font-bold text-3xl">
+                                                            <div>
+                                                                        Total
+                                                                        Price
+                                                            </div>
+                                                            <div>
+                                                                        $<span id="discount-cost">1299</span>
+                                                            </div>
+                                                </div>
+
+
+                                    </div>
+                        </section>
+            </main>
+
+
+            <!------------------------------JavaScrip Integrated CDN Link section--------------------------->
+
+            <script src="Js/shopping-card.js">
+
+            </script>
+</body>
+
+</html>
